@@ -1,0 +1,49 @@
+ 1. Inicio	
+
+ 2. nombreJugador, x(50) [{A-Z}, {a-z}, {BS}] ← ""
+ 3. posicionJugador, x(50) [{A-Z}, {a-z}, {BS}] ← ""
+ 4. edadJugador, i [0 - n] ← 0
+ 5. estaturaJugador, d [0 - n] ← 0
+ 6. mensaje, x(1000) [{A-Z}, {a-z}, {BS}] ← ""
+ 7. bandera, l ← true
+ 8. opcion, x(1) [a-z]
+ 9. sumaEdades, d [0 - n] ← 0
+10. sumaEstaturas, d [0 - n] ← 0
+11. totalEdades, d [0 - n]} ← 0 
+12. totalEstaturas, d [0 - n] ← 0
+13. divisor, i [0 - n] ← 0
+
+14. Mientras bandera == true entonces
+15.	     <<"Ingrese el nombre del jugador"
+16.	     >>nombreJugador
+
+17.	     <<"Ingrese la edad del jugador"
+18.	     >>edadJugador
+
+19.	     <<"Ingrese la posición en la que juega en el campo"
+20.	     >>posicionJugador
+
+21.	     <<"Ingrese la estatura del jugador"
+22.	     >>estaturaJugador
+
+23.	     mensaje ← mensaje + nombreJugador + " " + "-" + posicionJugador + "-, " + "edadJugador " + edadJugador ", estaturaJugador " + estatura + "\n"
+24.	     sumaEdades ← sumaEdades + edad
+25.	     sumaEstaturas ← sumaEstaturas + estatura
+26.	     divisor ← divisor + 1
+	   
+27.	     <<"Si desea terminar el proceso, ingrese s para salir"
+28.	     >> opcion
+
+29.	     Si opcion == "s" entonces
+30.		bandera ← false
+31.	     Fin Si
+
+32. Fin Mientras
+
+33. totalEdades ← sumaEdades / divisor
+34. totalEstaturas ← sumaEstaturas / divisor 
+ 
+35. mensaje ← mensaje + "Promedio de edades: " + totalEdades + "\n" + "Promedio estaturas es de: " + totalEstaturas + "\n"
+36. <<mensaje
+
+37. Fin

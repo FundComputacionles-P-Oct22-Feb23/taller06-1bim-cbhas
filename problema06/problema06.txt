@@ -1,0 +1,38 @@
+ 1. Inicio
+
+ 2. tipoCliente, i [0 - 3] 
+ 3. contador, i [0 - n] ← 1
+ 4. nombreCliente, x(500)[{A-Z}, {a-z}, {BS}] ← ""
+ 5. costoComputadora, d [0 - n]
+ 6. mensaje, x(1000)[{A-Z}, {a-z}, {BS}] ← ""
+ 7. precio, d [0 - n]
+ 8. descuento1, d [0 - n]
+ 9. descuento2, d [0 - n]
+
+10. Mientras contador <= 7 entonces
+11. 	     <<"Ingrese el nombre del cliente:"
+12.          >>nombreCliente 
+
+13.          <<"Ingrese el costoComputadora de la computadora:"
+14.          >>costoComputadora
+
+15.          <<"Que tipoCliente de cliente es usted"
+16.          >>tipoCliente
+
+17.          precio ← costoComputadora
+
+18.          Si tipoCliente == 1 entonces
+19.             descuento1 ← costoComputadora * 0.10
+20.             precio ← costoComputadora - descuento
+21.          Fin Si
+
+22.          Si tipoCliente == 2 entonces
+23.             descuento2 ← costoComputadora * 0.20
+24.             precio ← costoComputadora - descuento
+25.          Fin Si
+26.          mensaje ← mensaje + "Cliente "+ "tipoCliente " + tipoCliente "," + " compra computadora con precio " + "$" + precio + "\n"
+27.          contador ← contador + 1
+28. Fin Mientras
+29. Escribir mensaje
+
+30. Fin

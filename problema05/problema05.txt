@@ -1,0 +1,29 @@
+ 1. Inicio	
+
+ 2. contador, i {0 - n} ← 1
+ 3. nombreEstudiante, x(50) [{A-Z}, {a-z}, {BS}] ← ""
+ 4. promedioCiclo, d {0, n} ← 0
+ 5. registro, x(10) [{a-z}] ← ""
+ 6. mensaje, x(1000) [{A-Z}, {a-z}, {BS}] ← ""
+  
+ 8. Mientras contador <= 4 entonces
+ 9.	     <<"Ingrese el nombre del estudiante"
+10.	     >>nombreEstudiante
+
+11.	     <<"Ingrese su promedio del ciclo"
+12.	     >>promedioCiclo
+
+13.	     Si promedioCiclo >= 7 entonces
+14.	        registro ← "Aprobado"
+
+15.	     De lo contrario
+16.		registro ← "Reprobado"
+17.	     Fin Si
+
+18.	     mensaje ← mensaje + nombreEstudiante + "\t" + promedioCiclo + "\t" + registro + "\n"
+19.	     contador = contador + 1
+
+20. Fin Mientras
+21. <<mensaje
+
+22. Fin
